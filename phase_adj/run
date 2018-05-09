@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "dataset(size)	cpu_h1	gpu_h1	cpu_time	gpu_time	speedup"
+for x in garrido glycine simuladoc simuladod edson; do
+	python phase_adj.py $x
+done
